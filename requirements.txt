@@ -1,0 +1,40 @@
+# 核心 Agent 框架
+langchain>=0.3.0
+langgraph>=0.2.0
+langgraph-checkpoint-sqlite>=2.0.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+langchain-chroma>=0.2.0
+langchain-unstructured>=0.1.0
+langchain-text-splitters>=0.3.0
+
+# 向量数据库与嵌入模型
+chromadb>=0.5.0
+dashscope>=1.20.0
+
+# 后端接口与网页界面
+fastapi>=0.115.0
+uvicorn>=0.32.0
+pydantic>=2.0.0
+gradio>=5.0.0
+httpx>=0.28.0
+
+# 网络搜索与文档解析
+tavily-python>=0.5.0
+python-docx>=1.1.0
+# 旧版 .doc 文件解析需要 textract，平台依赖较重。
+# 如确实需要 .doc 支持，可按运行环境单独安装；普通 .txt/.docx/.md 不依赖它。
+
+# 语音输入与语音合成
+funasr>=1.0.0
+torch>=2.1.0
+torchaudio>=2.1.0
+pyttsx3>=2.90
+edge-tts>=6.1.0
+python-multipart>=0.0.9
+
+# 基础设施与运行时
+aiosqlite>=0.20.0
+certifi>=2024.0.0
+python-dotenv>=1.0.0
+concurrent-log-handler>=0.9.0
